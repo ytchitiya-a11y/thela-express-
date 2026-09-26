@@ -1,13 +1,15 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 
+
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  apiKey: "AIzaSyBsAEpp3hooCCHYEdmTNqTId9aWK0a69Ms",
+  authDomain: "ai-vit-52666.firebaseapp.com",
+  projectId: "ai-vit-52666",
+  storageBucket: "ai-vit-52666.firebasestorage.app",
+  messagingSenderId: "137839510307",
+  appId: "1:137839510307:web:c8f56f623c8234b4638296",
+  measurementId: "G-CDTY9LJLC7"
 };
 
 const app = initializeApp(firebaseConfig);
