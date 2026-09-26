@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #FBF3E7;
+  color: #2B211C;
+}
+
+/* Order chit / ticket card - perforated edge illusion using radial gradient dots */
+.chit {
+  position: relative;
+  background: #FFFDF9;
+  border: 1px solid rgba(140, 90, 59, 0.25);
+}
+.chit::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 12px;
+  right: 12px;
+  height: 8px;
+  background-image: radial-gradient(circle, #FBF3E7 3px, transparent 3.5px);
+  background-size: 14px 8px;
+  background-repeat: repeat-x;
+}
+
+/* Handwritten chalkboard-style tag */
+.chalk-tag {
+  font-family: 'Caveat', cursive;
+  transform: rotate(-3deg);
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #E8A23D;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
